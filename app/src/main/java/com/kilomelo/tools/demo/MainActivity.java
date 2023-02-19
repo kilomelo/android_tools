@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.kilomelo.tools.LogTool;
-import com.kilomelo.tools.PersistentData;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         LogTool.logMethod();
         setContentView(R.layout.activity_main);
-        PersistentData.getInstance().init(this);
     }
 }
